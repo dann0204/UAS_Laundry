@@ -92,14 +92,20 @@ public class adminDashboard extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        akunButton = new javax.swing.JButton();
+        riwayatButton2 = new javax.swing.JButton();
+        statusButton1 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        statusButton2 = new javax.swing.JButton();
+        statusButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(2, 48, 71));
+        jPanel1.setBackground(new java.awt.Color(42, 97, 153));
 
-        jPanel3.setBackground(new java.awt.Color(2, 48, 71));
+        jPanel3.setBackground(new java.awt.Color(42, 97, 153));
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white));
 
         logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/log-out.png"))); // NOI18N
@@ -109,11 +115,13 @@ public class adminDashboard extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel3.setBackground(new java.awt.Color(242, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("LOG OUT");
 
-        btnUserManagement.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnUserManagement.setBackground(new java.awt.Color(242, 255, 255));
+        btnUserManagement.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnUserManagement.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/profile.png"))); // NOI18N
         btnUserManagement.setText("Manajemen User");
         btnUserManagement.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +130,8 @@ public class adminDashboard extends javax.swing.JFrame {
             }
         });
 
-        btnUserManagement1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnUserManagement1.setBackground(new java.awt.Color(242, 255, 255));
+        btnUserManagement1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnUserManagement1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/folder-management.png"))); // NOI18N
         btnUserManagement1.setText("     Report");
         btnUserManagement1.addActionListener(new java.awt.event.ActionListener() {
@@ -166,7 +175,7 @@ public class adminDashboard extends javax.swing.JFrame {
         mainPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white));
         mainPanel.setLayout(new java.awt.CardLayout());
 
-        userManagementPanel.setBackground(new java.awt.Color(2, 48, 71));
+        userManagementPanel.setBackground(new java.awt.Color(242, 255, 255));
 
         tableLogin.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -204,16 +213,17 @@ public class adminDashboard extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(infoUserTable);
 
-        jLabel2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(42, 97, 153));
         jLabel2.setText("Login Table User ");
 
-        jLabel4.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(42, 97, 153));
         jLabel4.setText("User Information Table");
 
-        btnSearch.setBackground(new java.awt.Color(0, 150, 199));
-        btnSearch.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnSearch.setBackground(new java.awt.Color(42, 97, 153));
+        btnSearch.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnSearch.setForeground(new java.awt.Color(242, 255, 255));
         btnSearch.setText("Search");
         btnSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,8 +231,9 @@ public class adminDashboard extends javax.swing.JFrame {
             }
         });
 
-        btnEdit.setBackground(new java.awt.Color(0, 150, 199));
-        btnEdit.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnEdit.setBackground(new java.awt.Color(42, 97, 153));
+        btnEdit.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnEdit.setForeground(new java.awt.Color(242, 255, 255));
         btnEdit.setText("Edit User Login");
         btnEdit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -230,8 +241,9 @@ public class adminDashboard extends javax.swing.JFrame {
             }
         });
 
-        btnDelete.setBackground(new java.awt.Color(0, 150, 199));
-        btnDelete.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnDelete.setBackground(new java.awt.Color(42, 97, 153));
+        btnDelete.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnDelete.setForeground(new java.awt.Color(242, 255, 255));
         btnDelete.setText("Delete User Login");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,8 +251,8 @@ public class adminDashboard extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(42, 97, 153));
         jLabel5.setText("Click here to register ");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -249,7 +261,7 @@ public class adminDashboard extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setForeground(new java.awt.Color(42, 97, 153));
         jLabel6.setText("Please Enter Your Username");
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -259,8 +271,9 @@ public class adminDashboard extends javax.swing.JFrame {
 
         txtUsername.setBackground(new java.awt.Color(206, 212, 218));
 
-        btnMainSearch.setBackground(new java.awt.Color(0, 150, 199));
-        btnMainSearch.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnMainSearch.setBackground(new java.awt.Color(42, 97, 153));
+        btnMainSearch.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnMainSearch.setForeground(new java.awt.Color(242, 255, 255));
         btnMainSearch.setText("Search User Login");
         btnMainSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -268,8 +281,9 @@ public class adminDashboard extends javax.swing.JFrame {
             }
         });
 
-        btnRefresh.setBackground(new java.awt.Color(193, 18, 31));
-        btnRefresh.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnRefresh.setBackground(new java.awt.Color(42, 97, 153));
+        btnRefresh.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnRefresh.setForeground(new java.awt.Color(242, 255, 255));
         btnRefresh.setText("Refresh");
         btnRefresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -277,8 +291,9 @@ public class adminDashboard extends javax.swing.JFrame {
             }
         });
 
-        btnMainSearch2.setBackground(new java.awt.Color(0, 150, 199));
-        btnMainSearch2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnMainSearch2.setBackground(new java.awt.Color(42, 97, 153));
+        btnMainSearch2.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnMainSearch2.setForeground(new java.awt.Color(242, 255, 255));
         btnMainSearch2.setText("Search ID User");
         btnMainSearch2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -286,8 +301,9 @@ public class adminDashboard extends javax.swing.JFrame {
             }
         });
 
-        btnEdit2.setBackground(new java.awt.Color(0, 150, 199));
-        btnEdit2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnEdit2.setBackground(new java.awt.Color(42, 97, 153));
+        btnEdit2.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnEdit2.setForeground(new java.awt.Color(242, 255, 255));
         btnEdit2.setText("Edit Info User");
         btnEdit2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -296,7 +312,7 @@ public class adminDashboard extends javax.swing.JFrame {
         });
 
         jLabel7.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setForeground(new java.awt.Color(42, 97, 153));
         jLabel7.setText("Please Enter Your Username");
         jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -306,8 +322,9 @@ public class adminDashboard extends javax.swing.JFrame {
 
         txtIDUser.setBackground(new java.awt.Color(206, 212, 218));
 
-        btnSearch2.setBackground(new java.awt.Color(0, 150, 199));
-        btnSearch2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnSearch2.setBackground(new java.awt.Color(42, 97, 153));
+        btnSearch2.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnSearch2.setForeground(new java.awt.Color(242, 255, 255));
         btnSearch2.setText("Search");
         btnSearch2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -315,8 +332,9 @@ public class adminDashboard extends javax.swing.JFrame {
             }
         });
 
-        btnRefresh2.setBackground(new java.awt.Color(193, 18, 31));
-        btnRefresh2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnRefresh2.setBackground(new java.awt.Color(42, 97, 153));
+        btnRefresh2.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnRefresh2.setForeground(new java.awt.Color(242, 255, 255));
         btnRefresh2.setText("Refresh");
         btnRefresh2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -329,96 +347,90 @@ public class adminDashboard extends javax.swing.JFrame {
         userManagementPanelLayout.setHorizontalGroup(
             userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, userManagementPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(28, 28, 28)
                 .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(userManagementPanelLayout.createSequentialGroup()
-                            .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel2)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(32, 32, 32)
-                            .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel4)
-                                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, userManagementPanelLayout.createSequentialGroup()
-                                        .addComponent(btnEdit2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(btnMainSearch2, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnRefresh2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGroup(userManagementPanelLayout.createSequentialGroup()
-                            .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, userManagementPanelLayout.createSequentialGroup()
-                                        .addGap(138, 138, 138)
-                                        .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jLabel6)
-                                            .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnRefresh))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, userManagementPanelLayout.createSequentialGroup()
-                                        .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnMainSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnDelete)))
-                                .addGroup(userManagementPanelLayout.createSequentialGroup()
-                                    .addGap(193, 193, 193)
-                                    .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel7)
-                                .addComponent(txtIDUser, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(userManagementPanelLayout.createSequentialGroup()
-                                    .addGap(55, 55, 55)
-                                    .addComponent(btnSearch2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGap(106, 106, 106)))
+                    .addComponent(jLabel5)
                     .addGroup(userManagementPanelLayout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jLabel5)))
-                .addContainerGap())
+                        .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 392, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(userManagementPanelLayout.createSequentialGroup()
+                                .addGap(106, 106, 106)
+                                .addComponent(jLabel2)))
+                        .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(userManagementPanelLayout.createSequentialGroup()
+                                .addGap(40, 40, 40)
+                                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(userManagementPanelLayout.createSequentialGroup()
+                                        .addComponent(btnEdit2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnMainSearch2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnRefresh2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, userManagementPanelLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel4)
+                                .addGap(39, 39, 39))))
+                    .addGroup(userManagementPanelLayout.createSequentialGroup()
+                        .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(userManagementPanelLayout.createSequentialGroup()
+                                .addComponent(btnEdit)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnMainSearch)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnDelete))
+                            .addGroup(userManagementPanelLayout.createSequentialGroup()
+                                .addGap(91, 91, 91)
+                                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel6)
+                                    .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(btnSearch, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtUsername, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)))
+                                .addGap(18, 18, 18)
+                                .addComponent(btnRefresh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(96, 96, 96)
+                        .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtIDUser, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnSearch2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(21, 21, 21))
         );
         userManagementPanelLayout.setVerticalGroup(
             userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(userManagementPanelLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, userManagementPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(2, 2, 2))
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(21, 21, 21)
+                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnEdit2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRefresh2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE, false)
+                        .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnMainSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnMainSearch2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnDelete)
-                    .addComponent(btnEdit)
-                    .addComponent(btnMainSearch)
-                    .addComponent(btnEdit2)
-                    .addComponent(btnMainSearch2)
-                    .addComponent(btnRefresh2))
-                .addGap(18, 18, 18)
-                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(userManagementPanelLayout.createSequentialGroup()
-                        .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(btnRefresh))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSearch))
-                    .addGroup(userManagementPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtIDUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSearch2)))
-                .addGap(51, 51, 51)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRefresh)
+                    .addComponent(txtIDUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(userManagementPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSearch)
+                    .addComponent(btnSearch2))
+                .addGap(31, 31, 31)
                 .addComponent(jLabel5)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         mainPanel.add(userManagementPanel, "card2");
@@ -468,7 +480,7 @@ public class adminDashboard extends javax.swing.JFrame {
                 .addGroup(reportPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(223, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
         reportPanelLayout.setVerticalGroup(
             reportPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -481,34 +493,82 @@ public class adminDashboard extends javax.swing.JFrame {
                 .addGroup(reportPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addContainerGap(196, Short.MAX_VALUE))
         );
 
         mainPanel.add(reportPanel, "card3");
 
-        jPanel2.setBackground(new java.awt.Color(255, 195, 0));
+        jPanel2.setBackground(new java.awt.Color(42, 98, 154));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("WELCOME ADMIN");
+        akunButton.setBackground(new java.awt.Color(42, 98, 154));
+        akunButton.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
+        akunButton.setForeground(new java.awt.Color(255, 255, 255));
+        akunButton.setText("Layanan");
+        akunButton.setAlignmentY(1.0F);
+        akunButton.setBorderPainted(false);
+        akunButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                akunButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 90, 20));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        riwayatButton2.setBackground(new java.awt.Color(42, 98, 154));
+        riwayatButton2.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
+        riwayatButton2.setForeground(new java.awt.Color(255, 255, 255));
+        riwayatButton2.setText("Kontak");
+        riwayatButton2.setAlignmentY(1.0F);
+        riwayatButton2.setBorderPainted(false);
+        riwayatButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                riwayatButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(riwayatButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, -1, 20));
+
+        statusButton1.setBackground(new java.awt.Color(42, 98, 154));
+        statusButton1.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
+        statusButton1.setForeground(new java.awt.Color(255, 255, 255));
+        statusButton1.setText("Beranda");
+        statusButton1.setAlignmentY(1.0F);
+        statusButton1.setBorderPainted(false);
+        statusButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                statusButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(statusButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, 20));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/logo.png"))); // NOI18N
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+
+        statusButton2.setBackground(new java.awt.Color(242, 255, 255));
+        statusButton2.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
+        statusButton2.setForeground(new java.awt.Color(42, 97, 153));
+        statusButton2.setText("Login");
+        statusButton2.setAlignmentY(1.0F);
+        statusButton2.setBorderPainted(false);
+        statusButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                statusButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(statusButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 70, 20));
+
+        statusButton3.setBackground(new java.awt.Color(242, 255, 255));
+        statusButton3.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
+        statusButton3.setForeground(new java.awt.Color(42, 97, 153));
+        statusButton3.setText("Sign Up");
+        statusButton3.setAlignmentY(1.0F);
+        statusButton3.setBorderPainted(false);
+        statusButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                statusButton3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(statusButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 90, 20));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -516,19 +576,21 @@ public class adminDashboard extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 454, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -548,6 +610,293 @@ public class adminDashboard extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void statusButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_statusButton3ActionPerformed
+
+    private void statusButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_statusButton2ActionPerformed
+
+    private void statusButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_statusButton1ActionPerformed
+
+    private void riwayatButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_riwayatButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_riwayatButton2ActionPerformed
+
+    private void akunButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_akunButtonActionPerformed
+
+    }//GEN-LAST:event_akunButtonActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        try {
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            LocalDateTime now = LocalDateTime.now();
+
+            Connection MyConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_uas_laundry","root","");
+            File file=new File("src/report/lapHarian.jrxml");
+            JasperDesign jdesign = JRXmlLoader.load(file.getAbsolutePath());
+            String query = "SELECT * FROM tab_pesanan WHERE status = 'false' AND tanggal = '"+dtf.format(now)+"';";
+
+            JRDesignQuery updateQuery = new JRDesignQuery();
+            updateQuery.setText(query);
+
+            jdesign.setQuery(updateQuery);
+
+            JasperReport jreport = JasperCompileManager.compileReport(jdesign);
+            JasperPrint jprint = JasperFillManager.fillReport(jreport, null, MyConnection);
+
+            JasperViewer.viewReport(jprint);
+
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        try {
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM");
+            LocalDateTime now = LocalDateTime.now();
+
+            DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("yyyy");
+            LocalDateTime now2 = LocalDateTime.now();
+
+            Connection MyConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_uas_laundry","root","");
+            File file = new File("src/report/lapBulanan.jrxml");
+            JasperDesign jdesign = JRXmlLoader.load(file.getAbsolutePath());
+            String query = "SELECT * FROM tab_pesanan WHERE tanggal > '0/"+dtf.format(now)+"/"+dtf2.format(now2)+"' AND tanggal < '32/"+dtf.format(now)+"/"+dtf2.format(now2)+"' AND status = 'false'";
+
+            JRDesignQuery updateQuery = new JRDesignQuery();
+            updateQuery.setText(query);
+
+            jdesign.setQuery(updateQuery);
+
+            JasperReport jreport = JasperCompileManager.compileReport(jdesign);
+            JasperPrint jprint = JasperFillManager.fillReport(jreport, null, MyConnection);
+
+            JasperViewer.viewReport(jprint);
+
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void btnRefresh2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefresh2ActionPerformed
+        // TODO add your handling code here:
+        this.nama = null;
+        this.idUser = null;
+        this.alamat = null;
+        this.telepon = null;
+        txtIDUser.setText("");
+        showTableInformationUser();
+    }//GEN-LAST:event_btnRefresh2ActionPerformed
+
+    private void btnSearch2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearch2ActionPerformed
+        // TODO add your handling code here:
+        if (!getIDUser().equals("")) {
+            int n = 0;
+            String [] kolom = {"NO", "ID User", "Nama", "Telepon", "Alamat"};
+            DefaultTableModel tb1 = new DefaultTableModel(null, kolom);
+
+            try {
+                Statement stmt = (Statement) Connect.configDB().createStatement();
+                String query = "SELECT * FROM customer WHERE id_user = ('"+getIDUser()+"');";
+                ResultSet rs = stmt.executeQuery(query);
+
+                if (rs.next()) {
+                    n++;
+                    String IDUser = rs.getString("id_user");
+                    String nama = rs.getString("nama");
+                    String telpon = rs.getString("telpon");
+                    String addr = rs.getString("alamat");
+
+                    tb1.addRow(new String[] {String.valueOf(n), IDUser, nama, telpon, addr});
+                    infoUserTable.setModel(tb1);
+                }else{
+                    JOptionPane.showMessageDialog(this, "ID not found");
+                }
+
+            } catch (Exception e) {
+                System.err.println(e);
+            }
+        }else{
+            JOptionPane.showMessageDialog(this, "Please fill out the form");
+            return;
+        }
+    }//GEN-LAST:event_btnSearch2ActionPerformed
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void btnEdit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEdit2ActionPerformed
+        // TODO add your handling code here:
+        defaultForm2(false);
+        try {
+            if (!this.idUser.equals(null) && !this.nama.equals(null) && !this.telepon.equals(null) && !this.alamat.equals(null)) {
+                insertIntoEditInfoUser(this.idUser, this.nama, this.telepon, this.alamat);
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please choose an account");
+        }
+    }//GEN-LAST:event_btnEdit2ActionPerformed
+
+    private void btnMainSearch2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMainSearch2ActionPerformed
+        // TODO add your handling code here:
+        defaultForm2(true);
+    }//GEN-LAST:event_btnMainSearch2ActionPerformed
+
+    private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
+        // TODO add your handling code here:
+        this.username = null;
+        this.password = null;
+        txtUsername.setText("");
+        showTablesLogin();
+    }//GEN-LAST:event_btnRefreshActionPerformed
+
+    private void btnMainSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMainSearchActionPerformed
+        // TODO add your handling code here:
+        defaultForm(true);
+    }//GEN-LAST:event_btnMainSearchActionPerformed
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        try {
+            // TODO add your handling code here:
+            signup sg = new signup();
+            sg.setVisible(true);
+        } catch (SQLException ex) {
+            Logger.getLogger(adminDashboard.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+        // TODO add your handling code here:
+        defaultForm(false);
+
+        try {
+            if (!this.username.equals(null) && !this.password.equals(null)) {
+                int response =JOptionPane.showConfirmDialog(this, "Do you really want to delete ?", "Confirm", JOptionPane.YES_OPTION, JOptionPane.QUESTION_MESSAGE);
+                if (response == JOptionPane.YES_OPTION) {
+                    try {
+                        Statement stmt = (Statement) Connect.configDB().createStatement();
+                        //change id customer from tab_pesanan
+                        stmt.executeUpdate("UPDATE tab_pesanan SET kode_customer = 'CST5' WHERE kode_customer = '"+getIDUserFromDB(this.username)+"';");
+
+                        //delete record from login table
+                        stmt.executeUpdate("DELETE FROM login WHERE username = '" + this.username+"';");
+
+                        //delete record from table point_diskon
+                        stmt.executeUpdate("DELETE FROM point_diskon WHERE id_user = '" + getIDUserFromDB(this.username)+"';");
+
+                        //delete record from customer
+                        stmt.executeUpdate("DELETE FROM customer WHERE username = '" + this.username+"';");
+
+                        JOptionPane.showMessageDialog(this, "The information was successfully updated");
+                        showTablesLogin();
+                    } catch (Exception e) {
+                    }
+                }else{
+                    return;
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please choose an account");
+        }
+    }//GEN-LAST:event_btnDeleteActionPerformed
+
+    private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
+        // TODO add your handling code here:
+        defaultForm(false);
+        try {
+            if (!this.username.equals(null) && !this.password.equals(null)) {
+                insertIntoEditForm(this.username, this.password);
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Please choose an account");
+        }
+    }//GEN-LAST:event_btnEditActionPerformed
+
+    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
+        // TODO add your handling code here:
+        if (!getUsername().equals("")) {
+            int n = 0;
+            String [] kolom = {"NO", "Username", "Password"};
+            DefaultTableModel tb1 = new DefaultTableModel(null, kolom);
+
+            try {
+                Statement stmt = (Statement) Connect.configDB().createStatement();
+                String query = "SELECT * FROM login WHERE username = ('"+getUsername()+"');";
+                ResultSet rs = stmt.executeQuery(query);
+
+                if (rs.next()) {
+                    n++;
+                    String username = rs.getString("username");
+                    String password = rs.getString("password");
+
+                    tb1.addRow(new String[] {String.valueOf(n), username, password});
+                    tableLogin.setModel(tb1);
+                }else{
+                    JOptionPane.showMessageDialog(this, "Username not found");
+                }
+
+            } catch (Exception e) {
+                System.err.println(e);
+            }
+        }else{
+            JOptionPane.showMessageDialog(this, "Please fill out the form");
+            return;
+        }
+    }//GEN-LAST:event_btnSearchActionPerformed
+
+    private void infoUserTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_infoUserTableMouseClicked
+        // TODO add your handling code here:
+        int row = infoUserTable.getSelectedRow();
+        TableModel model = infoUserTable.getModel();
+
+        this.idUser = model.getValueAt(row, 1).toString();
+        this.nama = model.getValueAt(row, 2).toString();
+        this.telepon = model.getValueAt(row, 3).toString();
+        this.alamat = model.getValueAt(row, 4).toString();
+    }//GEN-LAST:event_infoUserTableMouseClicked
+
+    private void tableLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableLoginMouseClicked
+        // TODO add your handling code here:
+        int row = tableLogin.getSelectedRow();
+        TableModel model = tableLogin.getModel();
+
+        this.username = model.getValueAt(row, 1).toString();
+        this.password = model.getValueAt(row, 2).toString();
+
+    }//GEN-LAST:event_tableLoginMouseClicked
+
+    private void btnUserManagement1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUserManagement1ActionPerformed
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        mainPanel.add(reportPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnUserManagement1ActionPerformed
+
+    private void btnUserManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUserManagementActionPerformed
+        // TODO add your handling code here:
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+
+        mainPanel.add(userManagementPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnUserManagementActionPerformed
+
     private void logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutMouseClicked
         // TODO add your handling code here:
         int response =JOptionPane.showConfirmDialog(this, "Are you sure ?", "Confirm", JOptionPane.YES_OPTION, JOptionPane.QUESTION_MESSAGE);
@@ -564,17 +913,6 @@ public class adminDashboard extends javax.swing.JFrame {
             return;
         }
     }//GEN-LAST:event_logoutMouseClicked
-
-    private void btnUserManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUserManagementActionPerformed
-        // TODO add your handling code here:
-        mainPanel.removeAll();
-        mainPanel.repaint();
-        mainPanel.revalidate();
-        
-        mainPanel.add(userManagementPanel);
-        mainPanel.repaint();
-        mainPanel.revalidate();
-    }//GEN-LAST:event_btnUserManagementActionPerformed
 
     private void showTablesLogin () {
         int n = 0;
@@ -599,17 +937,6 @@ public class adminDashboard extends javax.swing.JFrame {
         tableLogin.setModel(tb1);
     }
     
-    private void btnUserManagement1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUserManagement1ActionPerformed
-        // TODO add your handling code here:
-        mainPanel.removeAll();
-        mainPanel.repaint();
-        mainPanel.revalidate();
-        
-        mainPanel.add(reportPanel);
-        mainPanel.repaint();
-        mainPanel.revalidate();
-    }//GEN-LAST:event_btnUserManagement1ActionPerformed
-
     private String getIDUserFromDB (String username) {
         String result = "";
         try {
@@ -650,39 +977,6 @@ public class adminDashboard extends javax.swing.JFrame {
         infoUserTable.setModel(tb1);
     }
     
-    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
-        // TODO add your handling code here:
-        if (!getUsername().equals("")) {
-            int n = 0;
-            String [] kolom = {"NO", "Username", "Password"};
-            DefaultTableModel tb1 = new DefaultTableModel(null, kolom);
-            
-            try {
-                Statement stmt = (Statement) Connect.configDB().createStatement();
-                String query = "SELECT * FROM login WHERE username = ('"+getUsername()+"');";
-                ResultSet rs = stmt.executeQuery(query);
-
-                if (rs.next()) {
-                    n++;
-                    String username = rs.getString("username");
-                    String password = rs.getString("password");
-
-                    tb1.addRow(new String[] {String.valueOf(n), username, password});
-                    tableLogin.setModel(tb1);
-                }else{
-                    JOptionPane.showMessageDialog(this, "Username not found");
-                }
-
-            } catch (Exception e) {
-                System.err.println(e);
-            }
-        }else{
-            JOptionPane.showMessageDialog(this, "Please fill out the form");
-            return;
-        }
-
-    }//GEN-LAST:event_btnSearchActionPerformed
-
     private String getIDUser () {
         return txtIDUser.getText();
     }
@@ -703,18 +997,6 @@ public class adminDashboard extends javax.swing.JFrame {
         btnSearch2.setVisible(condition);
     }
     
-    private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
-        // TODO add your handling code here:
-        defaultForm(false);
-        try {
-            if (!this.username.equals(null) && !this.password.equals(null)) {
-                insertIntoEditForm(this.username, this.password);
-            }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Please choose an account");
-        }
-    }//GEN-LAST:event_btnEditActionPerformed
-
     private void insertIntoEditInfoUser (String idUser, String nama, String noTelp, String addrs){
         editInfoUserForm edtInfoUser = new editInfoUserForm();
         edtInfoUser.txtID.setText(this.idUser);
@@ -724,208 +1006,6 @@ public class adminDashboard extends javax.swing.JFrame {
         edtInfoUser.setVisible(true);
     }
     
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        // TODO add your handling code here:
-        defaultForm(false);
-        
-        try {
-            if (!this.username.equals(null) && !this.password.equals(null)) {
-                int response =JOptionPane.showConfirmDialog(this, "Do you really want to delete ?", "Confirm", JOptionPane.YES_OPTION, JOptionPane.QUESTION_MESSAGE);
-                    if (response == JOptionPane.YES_OPTION) {
-                        try {
-                            Statement stmt = (Statement) Connect.configDB().createStatement();
-                            //change id customer from tab_pesanan
-                            stmt.executeUpdate("UPDATE tab_pesanan SET kode_customer = 'CST5' WHERE kode_customer = '"+getIDUserFromDB(this.username)+"';");
-
-                            //delete record from login table
-                            stmt.executeUpdate("DELETE FROM login WHERE username = '" + this.username+"';");
-
-                            //delete record from table point_diskon
-                            stmt.executeUpdate("DELETE FROM point_diskon WHERE id_user = '" + getIDUserFromDB(this.username)+"';");
-
-                            //delete record from customer
-                            stmt.executeUpdate("DELETE FROM customer WHERE username = '" + this.username+"';");
-
-                            JOptionPane.showMessageDialog(this, "The information was successfully updated");
-                            showTablesLogin();
-                        } catch (Exception e) {
-                        }
-                    }else{
-                        return;
-                    }
-            }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Please choose an account");
-        }
-    }//GEN-LAST:event_btnDeleteActionPerformed
-
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-        try {
-            // TODO add your handling code here:
-            signup sg = new signup();
-            sg.setVisible(true);
-        } catch (SQLException ex) {
-            Logger.getLogger(adminDashboard.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jLabel5MouseClicked
-
-    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel6MouseClicked
-
-    private void btnMainSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMainSearchActionPerformed
-        // TODO add your handling code here:
-        defaultForm(true);
-    }//GEN-LAST:event_btnMainSearchActionPerformed
-
-    private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
-        // TODO add your handling code here:
-        this.username = null;
-        this.password = null;
-        txtUsername.setText("");
-        showTablesLogin();
-    }//GEN-LAST:event_btnRefreshActionPerformed
-
-    private void tableLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableLoginMouseClicked
-        // TODO add your handling code here:
-        int row = tableLogin.getSelectedRow();
-        TableModel model = tableLogin.getModel();
-        
-        this.username = model.getValueAt(row, 1).toString();
-        this.password = model.getValueAt(row, 2).toString();
-        
-    }//GEN-LAST:event_tableLoginMouseClicked
-
-    private void btnMainSearch2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMainSearch2ActionPerformed
-        // TODO add your handling code here:
-        defaultForm2(true);
-    }//GEN-LAST:event_btnMainSearch2ActionPerformed
-
-    private void btnEdit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEdit2ActionPerformed
-        // TODO add your handling code here:
-        defaultForm2(false);
-        try {
-            if (!this.idUser.equals(null) && !this.nama.equals(null) && !this.telepon.equals(null) && !this.alamat.equals(null)) {
-                insertIntoEditInfoUser(this.idUser, this.nama, this.telepon, this.alamat);
-            }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Please choose an account");
-        }
-    }//GEN-LAST:event_btnEdit2ActionPerformed
-
-    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel7MouseClicked
-
-    private void btnSearch2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearch2ActionPerformed
-        // TODO add your handling code here:
-        if (!getIDUser().equals("")) {
-            int n = 0;
-            String [] kolom = {"NO", "ID User", "Nama", "Telepon", "Alamat"};
-            DefaultTableModel tb1 = new DefaultTableModel(null, kolom);
-            
-            try {
-                Statement stmt = (Statement) Connect.configDB().createStatement();
-                String query = "SELECT * FROM customer WHERE id_user = ('"+getIDUser()+"');";
-                ResultSet rs = stmt.executeQuery(query);
-
-                if (rs.next()) {
-                    n++;
-                    String IDUser = rs.getString("id_user");
-                    String nama = rs.getString("nama");
-                    String telpon = rs.getString("telpon");
-                    String addr = rs.getString("alamat");
-                    
-                    
-                    tb1.addRow(new String[] {String.valueOf(n), IDUser, nama, telpon, addr});
-                    infoUserTable.setModel(tb1);
-                }else{
-                    JOptionPane.showMessageDialog(this, "ID not found");
-                }
-
-            } catch (Exception e) {
-                System.err.println(e);
-            }
-        }else{
-            JOptionPane.showMessageDialog(this, "Please fill out the form");
-            return;
-        }
-    }//GEN-LAST:event_btnSearch2ActionPerformed
-
-    private void btnRefresh2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefresh2ActionPerformed
-        // TODO add your handling code here:
-        this.nama = null;
-        this.idUser = null;
-        this.alamat = null;
-        this.telepon = null;
-        txtIDUser.setText("");
-        showTableInformationUser();
-    }//GEN-LAST:event_btnRefresh2ActionPerformed
-
-    private void infoUserTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_infoUserTableMouseClicked
-        // TODO add your handling code here:
-        int row = infoUserTable.getSelectedRow();
-        TableModel model = infoUserTable.getModel();
-        
-        this.idUser = model.getValueAt(row, 1).toString();
-        this.nama = model.getValueAt(row, 2).toString();
-        this.telepon = model.getValueAt(row, 3).toString();
-        this.alamat = model.getValueAt(row, 4).toString();
-    }//GEN-LAST:event_infoUserTableMouseClicked
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        try {
-            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM");
-            LocalDateTime now = LocalDateTime.now();
-
-            DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("yyyy");
-            LocalDateTime now2 = LocalDateTime.now();
-
-            Connection MyConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_uas_laundry","root","");
-            File file = new File("src/report/lapBulanan.jrxml");
-            JasperDesign jdesign = JRXmlLoader.load(file.getAbsolutePath());
-            String query = "SELECT * FROM tab_pesanan WHERE tanggal > '0/"+dtf.format(now)+"/"+dtf2.format(now2)+"' AND tanggal < '32/"+dtf.format(now)+"/"+dtf2.format(now2)+"' AND status = 'false'";
-
-            JRDesignQuery updateQuery = new JRDesignQuery();
-            updateQuery.setText(query);
-
-            jdesign.setQuery(updateQuery);
-
-            JasperReport jreport = JasperCompileManager.compileReport(jdesign);
-            JasperPrint jprint = JasperFillManager.fillReport(jreport, null, MyConnection);
-
-            JasperViewer.viewReport(jprint);
-
-        } catch (Exception e) {
-        }
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        try {
-            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-            LocalDateTime now = LocalDateTime.now();
-
-            Connection MyConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_uas_laundry","root","");
-            File file=new File("src/report/lapHarian.jrxml");
-            JasperDesign jdesign = JRXmlLoader.load(file.getAbsolutePath());
-            String query = "SELECT * FROM tab_pesanan WHERE status = 'false' AND tanggal = '"+dtf.format(now)+"';";
-
-            JRDesignQuery updateQuery = new JRDesignQuery();
-            updateQuery.setText(query);
-
-            jdesign.setQuery(updateQuery);
-
-            JasperReport jreport = JasperCompileManager.compileReport(jdesign);
-            JasperPrint jprint = JasperFillManager.fillReport(jreport, null, MyConnection);
-
-            JasperViewer.viewReport(jprint);
-
-        } catch (Exception e) {
-        }
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void insertIntoEditForm (String username, String password) {
         editLoginForm edit = new editLoginForm();
         edit.tempUsername = username;
@@ -970,6 +1050,7 @@ public class adminDashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton akunButton;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnEdit;
     private javax.swing.JButton btnEdit2;
@@ -984,7 +1065,6 @@ public class adminDashboard extends javax.swing.JFrame {
     private javax.swing.JTable infoUserTable;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
@@ -993,6 +1073,8 @@ public class adminDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -1001,6 +1083,10 @@ public class adminDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel logout;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JPanel reportPanel;
+    private javax.swing.JButton riwayatButton2;
+    private javax.swing.JButton statusButton1;
+    private javax.swing.JButton statusButton2;
+    private javax.swing.JButton statusButton3;
     private javax.swing.JTable tableLogin;
     private javax.swing.JTextField txtIDUser;
     private javax.swing.JTextField txtUsername;
