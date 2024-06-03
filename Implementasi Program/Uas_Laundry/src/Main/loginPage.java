@@ -57,7 +57,6 @@ public class loginPage extends javax.swing.JFrame {
         riwayatButton2 = new javax.swing.JButton();
         statusButton1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         statusButton2 = new javax.swing.JButton();
         statusButton3 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
@@ -132,7 +131,7 @@ public class loginPage extends javax.swing.JFrame {
                 akunButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 90, 20));
+        jPanel2.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 90, 20));
 
         riwayatButton2.setBackground(new java.awt.Color(42, 98, 154));
         riwayatButton2.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
@@ -145,7 +144,7 @@ public class loginPage extends javax.swing.JFrame {
                 riwayatButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(riwayatButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, -1, 20));
+        jPanel2.add(riwayatButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 20, -1, 20));
 
         statusButton1.setBackground(new java.awt.Color(42, 98, 154));
         statusButton1.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
@@ -159,10 +158,9 @@ public class loginPage extends javax.swing.JFrame {
             }
         });
         jPanel2.add(statusButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, 20));
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/logo.png"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/logo.png"))); // NOI18N
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
         statusButton2.setBackground(new java.awt.Color(242, 255, 255));
         statusButton2.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
@@ -175,7 +173,7 @@ public class loginPage extends javax.swing.JFrame {
                 statusButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(statusButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 70, 20));
+        jPanel2.add(statusButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, 70, 20));
 
         statusButton3.setBackground(new java.awt.Color(242, 255, 255));
         statusButton3.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
@@ -188,7 +186,7 @@ public class loginPage extends javax.swing.JFrame {
                 statusButton3ActionPerformed(evt);
             }
         });
-        jPanel2.add(statusButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 90, 20));
+        jPanel2.add(statusButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, 90, 20));
 
         jLabel5.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(42, 97, 153));
@@ -440,7 +438,6 @@ public class loginPage extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;

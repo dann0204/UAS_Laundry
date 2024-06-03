@@ -30,21 +30,22 @@ public class Home extends javax.swing.JFrame {
         akunButton = new javax.swing.JButton();
         riwayatButton2 = new javax.swing.JButton();
         statusButton1 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         statusButton2 = new javax.swing.JButton();
         statusButton3 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         statusButton = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(242, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(42, 98, 154));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -60,7 +61,7 @@ public class Home extends javax.swing.JFrame {
                 akunButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 90, 20));
+        jPanel2.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 90, 20));
 
         riwayatButton2.setBackground(new java.awt.Color(42, 98, 154));
         riwayatButton2.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
@@ -73,7 +74,7 @@ public class Home extends javax.swing.JFrame {
                 riwayatButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(riwayatButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, -1, 20));
+        jPanel2.add(riwayatButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, 20));
 
         statusButton1.setBackground(new java.awt.Color(42, 98, 154));
         statusButton1.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
@@ -86,13 +87,7 @@ public class Home extends javax.swing.JFrame {
                 statusButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(statusButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, 20));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/logo.png"))); // NOI18N
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/logo.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+        jPanel2.add(statusButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, 20));
 
         statusButton2.setBackground(new java.awt.Color(242, 255, 255));
         statusButton2.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
@@ -118,29 +113,37 @@ public class Home extends javax.swing.JFrame {
                 statusButton3ActionPerformed(evt);
             }
         });
-        jPanel2.add(statusButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 90, 20));
+        jPanel2.add(statusButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 90, 20));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/logo.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 68));
 
         jLabel4.setBackground(new java.awt.Color(42, 98, 154));
         jLabel4.setFont(new java.awt.Font("Poppins Medium", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(42, 98, 154));
         jLabel4.setText("WiseWash Solusinya...");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 303, 33));
 
         jLabel5.setBackground(new java.awt.Color(42, 98, 154));
         jLabel5.setFont(new java.awt.Font("Poppins Medium", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(42, 98, 154));
         jLabel5.setText("Mau Laundry Anti Ribet?");
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/gambar_1.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, 33));
 
         jLabel6.setBackground(new java.awt.Color(42, 98, 154));
         jLabel6.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(42, 98, 154));
         jLabel6.setText("Rapi dan Bersih Setiap Hari");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 303, 21));
 
         jLabel7.setBackground(new java.awt.Color(42, 98, 154));
         jLabel7.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(42, 98, 154));
         jLabel7.setText("Kepuasan Anda Prioritas Kami");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 303, 14));
 
         statusButton.setBackground(new java.awt.Color(42, 98, 154));
         statusButton.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
@@ -153,51 +156,11 @@ public class Home extends javax.swing.JFrame {
                 statusButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(statusButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, 37));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(463, 153, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/gambar_1.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(statusButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addContainerGap(26, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26)
-                        .addComponent(statusButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel2))
-                .addContainerGap(42, Short.MAX_VALUE))
-        );
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/gambar_1.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 290, 290));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
