@@ -2,7 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
+package Main;
 
+import access.signupPage;
+import java.sql.SQLException;
 /**
  *
  * @author galang
@@ -61,7 +64,7 @@ public class Home extends javax.swing.JFrame {
                 akunButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 90, 20));
+        jPanel2.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, -1, 20));
 
         riwayatButton2.setBackground(new java.awt.Color(42, 98, 154));
         riwayatButton2.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
@@ -178,10 +181,27 @@ public class Home extends javax.swing.JFrame {
 
     private void statusButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton2ActionPerformed
         // TODO add your handling code here:
+        try {
+            dispose();
+            loginPage halamanLogin = new loginPage();
+            halamanLogin.setVisible(true);
+        } catch (SQLException e) {
+            // Tangani pengecualian di sini, misalnya mencetak stack trace
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_statusButton2ActionPerformed
 
     private void statusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButtonActionPerformed
         // TODO add your handling code here:
+        try {
+            dispose();
+            loginPage halamanLogin = new loginPage();
+            halamanLogin.setVisible(true);
+        } catch (SQLException e) {
+            // Tangani pengecualian di sini, misalnya mencetak stack trace
+            e.printStackTrace();
+        }
+        
     }//GEN-LAST:event_statusButtonActionPerformed
 
     private void statusButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton1ActionPerformed
@@ -198,6 +218,14 @@ public class Home extends javax.swing.JFrame {
 
     private void statusButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton3ActionPerformed
         // TODO add your handling code here:
+        try {
+            dispose();
+            signupPage halamanSignup = new signupPage();
+            halamanSignup.setVisible(true);
+        } catch (SQLException e) {
+            // Tangani pengecualian di sini, misalnya mencetak stack trace
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_statusButton3ActionPerformed
 
     /**
