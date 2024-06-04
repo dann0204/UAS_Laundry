@@ -5,6 +5,7 @@
  */
 package access;
 
+import Main.Home;
 import Main.loginPage;
 import access.resetPassword;
 import java.sql.ResultSet;
@@ -48,8 +49,6 @@ public class forgotPassword extends javax.swing.JFrame {
         riwayatButton2 = new javax.swing.JButton();
         statusButton1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        statusButton2 = new javax.swing.JButton();
-        statusButton3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
@@ -132,32 +131,6 @@ public class forgotPassword extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/logo.png"))); // NOI18N
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
-
-        statusButton2.setBackground(new java.awt.Color(242, 255, 255));
-        statusButton2.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
-        statusButton2.setForeground(new java.awt.Color(42, 97, 153));
-        statusButton2.setText("Login");
-        statusButton2.setAlignmentY(1.0F);
-        statusButton2.setBorderPainted(false);
-        statusButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                statusButton2ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(statusButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, 70, 20));
-
-        statusButton3.setBackground(new java.awt.Color(242, 255, 255));
-        statusButton3.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
-        statusButton3.setForeground(new java.awt.Color(42, 97, 153));
-        statusButton3.setText("Sign Up");
-        statusButton3.setAlignmentY(1.0F);
-        statusButton3.setBorderPainted(false);
-        statusButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                statusButton3ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(statusButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, 90, 20));
 
         jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(42, 97, 153));
@@ -280,15 +253,10 @@ public class forgotPassword extends javax.swing.JFrame {
 
     private void statusButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton1ActionPerformed
         // TODO add your handling code here:
+        dispose();
+        Home halamanHome = new Home();
+        halamanHome.setVisible(true);
     }//GEN-LAST:event_statusButton1ActionPerformed
-
-    private void statusButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_statusButton2ActionPerformed
-
-    private void statusButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_statusButton3ActionPerformed
 
     
     
@@ -340,8 +308,6 @@ public class forgotPassword extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton riwayatButton2;
     private javax.swing.JButton statusButton1;
-    private javax.swing.JButton statusButton2;
-    private javax.swing.JButton statusButton3;
     public javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
 }

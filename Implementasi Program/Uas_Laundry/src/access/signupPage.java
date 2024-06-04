@@ -5,6 +5,7 @@
  */
 package access;
 
+import Main.Home;
 import Main.loginPage;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -56,8 +57,7 @@ public class signupPage extends javax.swing.JFrame {
         riwayatButton2 = new javax.swing.JButton();
         statusButton1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        statusButton2 = new javax.swing.JButton();
-        statusButton3 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -154,7 +154,7 @@ public class signupPage extends javax.swing.JFrame {
                 akunButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 90, 20));
+        jPanel2.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 100, 20));
 
         riwayatButton2.setBackground(new java.awt.Color(42, 98, 154));
         riwayatButton2.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
@@ -180,44 +180,27 @@ public class signupPage extends javax.swing.JFrame {
                 statusButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(statusButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, -1, 20));
+        jPanel2.add(statusButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, 20));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/logo.png"))); // NOI18N
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
-        statusButton2.setBackground(new java.awt.Color(242, 255, 255));
-        statusButton2.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
-        statusButton2.setForeground(new java.awt.Color(42, 97, 153));
-        statusButton2.setText("Login");
-        statusButton2.setAlignmentY(1.0F);
-        statusButton2.setBorderPainted(false);
-        statusButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                statusButton2ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(statusButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, 70, 20));
-
-        statusButton3.setBackground(new java.awt.Color(242, 255, 255));
-        statusButton3.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
-        statusButton3.setForeground(new java.awt.Color(42, 97, 153));
-        statusButton3.setText("Sign Up");
-        statusButton3.setAlignmentY(1.0F);
-        statusButton3.setBorderPainted(false);
-        statusButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                statusButton3ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(statusButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, 90, 20));
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(42, 97, 153));
+        jLabel1.setText("REGISTER FORM");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 660, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(246, 246, 246))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(94, 94, 94)
+                .addGap(102, 102, 102)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addComponent(jLabel5)
@@ -246,18 +229,20 @@ public class signupPage extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(67, 67, 67)
+                        .addGap(2, 2, 2)
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
+                        .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(txtPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -278,7 +263,7 @@ public class signupPage extends javax.swing.JFrame {
                 .addComponent(btnRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addComponent(backToLogin)
-                .addGap(25, 25, 25))
+                .addGap(22, 22, 22))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -289,7 +274,7 @@ public class signupPage extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -360,15 +345,10 @@ public class signupPage extends javax.swing.JFrame {
 
     private void statusButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton1ActionPerformed
         // TODO add your handling code here:
+        dispose();
+        Home halamanHome = new Home();
+        halamanHome.setVisible(true);
     }//GEN-LAST:event_statusButton1ActionPerformed
-
-    private void statusButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_statusButton2ActionPerformed
-
-    private void statusButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_statusButton3ActionPerformed
 
     private boolean isPasswordEquals () {
         if (!String.valueOf(txtPassword.getPassword()).equals(String.valueOf(txtConfirmPassword.getPassword()))) {
@@ -479,6 +459,7 @@ public class signupPage extends javax.swing.JFrame {
     private javax.swing.JButton akunButton;
     private javax.swing.JLabel backToLogin;
     private javax.swing.JButton btnRegister;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -490,8 +471,6 @@ public class signupPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton riwayatButton2;
     private javax.swing.JButton statusButton1;
-    private javax.swing.JButton statusButton2;
-    private javax.swing.JButton statusButton3;
     private javax.swing.JTextField txtAddress;
     private javax.swing.JPasswordField txtConfirmPassword;
     private javax.swing.JTextField txtName;
