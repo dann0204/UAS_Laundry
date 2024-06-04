@@ -5,6 +5,7 @@
  */
 package cashierDashboard;
 
+import Main.Home;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
@@ -258,7 +259,7 @@ public class reviewForm extends javax.swing.JFrame {
         akunButton.setText("Layanan");
         akunButton.setAlignmentY(1.0F);
         akunButton.setBorderPainted(false);
-        jPanel4.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 90, 20));
+        jPanel4.add(akunButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 90, 20));
 
         riwayatButton2.setBackground(new java.awt.Color(42, 98, 154));
         riwayatButton2.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
@@ -266,7 +267,7 @@ public class reviewForm extends javax.swing.JFrame {
         riwayatButton2.setText("Kontak");
         riwayatButton2.setAlignmentY(1.0F);
         riwayatButton2.setBorderPainted(false);
-        jPanel4.add(riwayatButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, -1, 20));
+        jPanel4.add(riwayatButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, -1, 20));
 
         statusButton1.setBackground(new java.awt.Color(42, 98, 154));
         statusButton1.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
@@ -274,7 +275,12 @@ public class reviewForm extends javax.swing.JFrame {
         statusButton1.setText("Beranda");
         statusButton1.setAlignmentY(1.0F);
         statusButton1.setBorderPainted(false);
-        jPanel4.add(statusButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, 20));
+        statusButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                statusButton1ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(statusButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, -1, 20));
         jPanel4.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Foto/logo.png"))); // NOI18N
@@ -286,7 +292,7 @@ public class reviewForm extends javax.swing.JFrame {
         statusButton2.setText("Login");
         statusButton2.setAlignmentY(1.0F);
         statusButton2.setBorderPainted(false);
-        jPanel4.add(statusButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 70, 20));
+        jPanel4.add(statusButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 20, 70, 20));
 
         statusButton3.setBackground(new java.awt.Color(242, 255, 255));
         statusButton3.setFont(new java.awt.Font("Poppins SemiBold", 1, 14)); // NOI18N
@@ -294,7 +300,7 @@ public class reviewForm extends javax.swing.JFrame {
         statusButton3.setText("Sign Up");
         statusButton3.setAlignmentY(1.0F);
         statusButton3.setBorderPainted(false);
-        jPanel4.add(statusButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 90, 20));
+        jPanel4.add(statusButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 20, 90, 20));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -445,7 +451,7 @@ public class reviewForm extends javax.swing.JFrame {
                             .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtIDPesanan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel9)
                             .addComponent(txtIDUser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -521,6 +527,13 @@ public class reviewForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void statusButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusButton1ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        Home halamanHome = new Home();
+        halamanHome.setVisible(true);
+    }//GEN-LAST:event_statusButton1ActionPerformed
 
     /**
      * @param args the command line arguments
