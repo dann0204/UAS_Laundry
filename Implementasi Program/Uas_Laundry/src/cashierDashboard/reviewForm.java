@@ -48,7 +48,7 @@ public class reviewForm extends javax.swing.JFrame {
         txtWaktu = new javax.swing.JTextField();
         txtServices = new javax.swing.JTextField();
         txtAktualBerat = new javax.swing.JTextField();
-        txtDelivery = new javax.swing.JTextField();
+        txtPengantaran = new javax.swing.JTextField();
         txtNewTotal = new javax.swing.JTextField();
         btnSave = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
@@ -61,7 +61,7 @@ public class reviewForm extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         txtNewTotal2 = new javax.swing.JTextField();
-        txtDelivery2 = new javax.swing.JTextField();
+        txtPengantaran2 = new javax.swing.JTextField();
         txtAktualBerat2 = new javax.swing.JTextField();
         txtServices2 = new javax.swing.JTextField();
         txtWaktu2 = new javax.swing.JTextField();
@@ -121,7 +121,7 @@ public class reviewForm extends javax.swing.JFrame {
 
         jLabel18.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(42, 97, 153));
-        jLabel18.setText("Delivery");
+        jLabel18.setText("Pengantaran");
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(42, 97, 153));
@@ -139,8 +139,8 @@ public class reviewForm extends javax.swing.JFrame {
         txtAktualBerat.setEditable(false);
         txtAktualBerat.setBackground(new java.awt.Color(206, 212, 218));
 
-        txtDelivery.setEditable(false);
-        txtDelivery.setBackground(new java.awt.Color(206, 212, 218));
+        txtPengantaran.setEditable(false);
+        txtPengantaran.setBackground(new java.awt.Color(206, 212, 218));
 
         txtNewTotal.setEditable(false);
         txtNewTotal.setBackground(new java.awt.Color(206, 212, 218));
@@ -186,7 +186,7 @@ public class reviewForm extends javax.swing.JFrame {
 
         jLabel30.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(42, 97, 153));
-        jLabel30.setText("Delivery");
+        jLabel30.setText("Pengantaran");
 
         jLabel31.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(42, 97, 153));
@@ -195,8 +195,8 @@ public class reviewForm extends javax.swing.JFrame {
         txtNewTotal2.setEditable(false);
         txtNewTotal2.setBackground(new java.awt.Color(206, 212, 218));
 
-        txtDelivery2.setEditable(false);
-        txtDelivery2.setBackground(new java.awt.Color(206, 212, 218));
+        txtPengantaran2.setEditable(false);
+        txtPengantaran2.setBackground(new java.awt.Color(206, 212, 218));
 
         txtAktualBerat2.setEditable(false);
         txtAktualBerat2.setBackground(new java.awt.Color(206, 212, 218));
@@ -344,7 +344,7 @@ public class reviewForm extends javax.swing.JFrame {
                     .addComponent(txtTgl, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtServices, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtAktualBerat, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtDelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPengantaran, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtDiskon, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNewTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(55, 55, 55)
@@ -383,7 +383,7 @@ public class reviewForm extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtAktualBerat2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtServices2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDelivery2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPengantaran2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtIDPesanan2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel9)
@@ -437,7 +437,7 @@ public class reviewForm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtAktualBerat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtDelivery, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtPengantaran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtDiskon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -473,7 +473,7 @@ public class reviewForm extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel30)
-                            .addComponent(txtDelivery2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtPengantaran2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel21)
@@ -508,8 +508,8 @@ public class reviewForm extends javax.swing.JFrame {
         if (response == JOptionPane.YES_OPTION) {
             try {
             Statement stmt4 = (Statement) Connect.configDB().createStatement();
-            stmt4.executeUpdate("UPDATE `tab_pesanan` SET `tanggal` = '"+txtTgl2.getText()+"', `jam` = '"+txtWaktu2.getText()+"', `services` = '"+txtServices2.getText()+"', `aktual_berat` = '"+txtAktualBerat2.getText()+"', `ongkir` = '"+txtDelivery2.getText()+"', `total_bayar` = '"+txtNewTotal2.getText().replace("Rp. ", "")+"' WHERE `id_pesanan` = '"+txtIDPesanan2.getText()+"'");
-            //stmt4.executeUpdate("UPDATE `tab_pesanan` SET `tanggal` = '"+txtTgl2.getText()+"', `jam` = '"+txtWaktu2.getText()+"', `services` = '"+txtServices2.getText()+"', `aktual_berat` = '"+txtAktualBerat2.getText()+"', `ongkir` = '"+txtDelivery2.getText()+"', `total_bayar` = '"+txtNewTotal2.getText()+"' WHERE `id_pesanan` = '"+txtIDPesanan2.getText()+"'");
+            stmt4.executeUpdate("UPDATE `tab_pesanan` SET `tanggal` = '"+txtTgl2.getText()+"', `jam` = '"+txtWaktu2.getText()+"', `services` = '"+txtServices2.getText()+"', `aktual_berat` = '"+txtAktualBerat2.getText()+"', `ongkir` = '"+txtPengantaran2.getText()+"', `total_bayar` = '"+txtNewTotal2.getText().replace("Rp. ", "")+"' WHERE `id_pesanan` = '"+txtIDPesanan2.getText()+"'");
+            //stmt4.executeUpdate("UPDATE `tab_pesanan` SET `tanggal` = '"+txtTgl2.getText()+"', `jam` = '"+txtWaktu2.getText()+"', `services` = '"+txtServices2.getText()+"', `aktual_berat` = '"+txtAktualBerat2.getText()+"', `ongkir` = '"+txtPengantaran2.getText()+"', `total_bayar` = '"+txtNewTotal2.getText()+"' WHERE `id_pesanan` = '"+txtIDPesanan2.getText()+"'");
 
             JOptionPane.showMessageDialog(this, "Data Tersimpan");
 
@@ -605,8 +605,8 @@ public class reviewForm extends javax.swing.JFrame {
     private javax.swing.JButton statusButton3;
     public javax.swing.JTextField txtAktualBerat;
     public javax.swing.JTextField txtAktualBerat2;
-    public javax.swing.JTextField txtDelivery;
-    public javax.swing.JTextField txtDelivery2;
+    public javax.swing.JTextField txtPengantaran;
+    public javax.swing.JTextField txtPengantaran2;
     public javax.swing.JTextField txtDiskon;
     public javax.swing.JTextField txtDiskon2;
     public javax.swing.JTextField txtIDPesanan;
