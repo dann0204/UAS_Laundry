@@ -107,7 +107,7 @@
                   <Table columnCount="4" rowCount="4">
                     <Column editable="true" title="Tanggal" type="java.lang.Object"/>
                     <Column editable="true" title="Nama Pelanggan" type="java.lang.Object"/>
-                    <Column editable="true" title="Layanan" type="java.lang.Object"/>
+                    <Column editable="true" title="Jenis Layanan" type="java.lang.Object"/>
                     <Column editable="true" title="Status Pemesanan" type="java.lang.Object"/>
                   </Table>
                 </Property>
