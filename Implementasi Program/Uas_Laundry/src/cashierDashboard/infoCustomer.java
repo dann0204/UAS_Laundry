@@ -58,7 +58,7 @@ public class infoCustomer extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Tanggal Pemesanan", "Nama Pelanggan", "Layanan", "Status Pemesanan"
+                "Tanggal Pemesanan", "Nama Pelanggan", "Jenis Layanan", "Status Pemesanan"
             }
         ));
         jScrollPane1.setViewportView(tableInfoCustomer);
