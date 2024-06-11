@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author Ziidan
+ */
+import java.sql.DriverManager;
+import javax.swing.JOptionPane;
+
+public class Koneksi_db {
+    public static com.mysql.jdbc.Connection conn;
+    public static void openConnection(){
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            String url = "jdbc:mysql://localhost:3306/uas_laundry";
+            conn = (com.mysql.jdbc.Connection) DriverManager.getConnection(url, "root", "");
+        }catch (ClassNotFoundException e){
+        
+        }catch (java.sql.SQLException e){
+            JOptionPane.showMessageDialog(null, "Tidak Bisa Koneksi");
+        } 
+    }
+    public static com.mysql.jdbc.Connection getConnection(){
+        return conn;      
+    }
+}
