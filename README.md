@@ -1,7 +1,7 @@
 # Object Oriented Programming
-# Repository Final Project Kelompok 5 mata kuliah Pemrograman Berbasis Objek
+## Final Project Kelompok 5 Mata Kuliah Pemrograman Berbasis Objek
 
-List Anggota Kelompok :
+### List Anggota Kelompok :
 
 - (22081010142) AHMAD ZIDAN HIBATULLAH
 - (22081010148) GALANG RIZQIAN FALAH
